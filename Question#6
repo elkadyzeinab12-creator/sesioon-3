@@ -1,0 +1,5 @@
+Question#6: If you define a constructor that takes parameters, does C# still provide the default empty constructor?
+
+No, if you define a constructor that takes parameters in C#, the compiler does not provide the default empty constructor
+because it already assumes that you have defined a constructor for your class. 
+The default empty constructor is only provided by the compiler if you do not define any constructors in your class.
