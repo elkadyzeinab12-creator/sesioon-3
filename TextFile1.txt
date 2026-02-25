@@ -1,0 +1,7 @@
+ Question: If s1 is an object and you write Student s2 = s1;, how many objects exist in memory?
+
+ When you write `Student s2 = s1;`, you are not creating a new object in memory.
+ Instead, both `s1` and `s2` reference the same object.
+ Therefore, there is only one object in memory that both `s1` and `s2` point to.
+ So, every time you assign `s1` to `s2`, you are just copying the reference, not creating a new object
+ and the changes you make to the object through `s1` will also affect `s2` and vice versa since they reference the same object.
