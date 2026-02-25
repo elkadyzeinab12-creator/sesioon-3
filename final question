@@ -1,0 +1,11 @@
+Question: If you assign a value type to an object (e.g., object obj = 50;),
+what is this process called in C#?
+
+This process is called "boxing" in C#. When you assign a value type (like an int) to an object, 
+the value type is wrapped inside an object, allowing it to be treated as a reference type.
+
+What happens if you then try to do int x = obj; without casting?
+
+If you try to assign the object back to an int without casting (e.g., int x = obj;), you will get a compile-time error.
+So, you need to explicitly cast the object back to the value type (e.g., int x = (int)obj;) to retrieve the original value.
+And this process is called "unboxing".
