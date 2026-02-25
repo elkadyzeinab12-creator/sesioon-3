@@ -1,0 +1,22 @@
+Q#4:What is a Private Constructor, and why would you use one?
+
+A private constructor is a constructor that is declared with the `private` access modifier. 
+This means that it cannot be accessed or called from outside the class in which it is defined.
+A private constructor is typically used in the following scenarios:
+
+1. **Singleton Pattern**: When you want to ensure that only one instance of a class is created
+you can use a private constructor to prevent external instantiation.
+The class can provide a static method that returns the single instance.
+
+2. **Static Classes**: If you want to create a class that only contains static members and should not be instantiated,
+you can use a private constructor to prevent the creation of instances of the class.
+
+3. **Factory Methods**: When you want to control the instantiation of a class and provide specific factory methods for creating instances,
+you can use a private constructor to prevent direct instantiation and enforce the use of the factory methods.
+
+4. **Utility Classes**: If you have a class that is meant to provide utility functions and should not be instantiated,
+you can use a private constructor to prevent the creation of instances of the class.
+
+In summary, a private constructor is used to restrict the instantiation of a class and is commonly used in design patterns like Singleton,
+static classes, factory methods, and utility classes to control how instances of the class are created and accessed.
+"اللي تم انشاؤه لا يمكن اننا نستخدمه خارج المنطقة اللي اتعرف فيها "
