@@ -1,0 +1,14 @@
+Q#3: The difference between the Stack and the Heap in C#
+
+In C#, the Stack and the Heap are two different areas of memory used for storing data.
+The Stack is a region of memory that is used for storing value types (such as int, float, and structs)
+and reference types such as classes and structs that are created on the stack. 
+The Stack is organized in a last-in, first-out (LIFO) manner,
+meaning that the most recently added item is the first one to be removed."اخر حاجة دخلت هي أول حاجة تخرج".
+The Stack is also faster than the Heap because it has a fixed size and does not require garbage collection.
+
+The Heap, on the other hand, is a region of memory that is used for storing reference types 
+such as objects, arrays, strings, and class instances that are created on the heap.
+The Heap is organized in a more complex manner than the Stack, and it can grow and shrink dynamically as needed.
+But it is slower than the Stack because it requires garbage collection to manage memory,
+and does not require to remove items in a specific order like the Stack.
