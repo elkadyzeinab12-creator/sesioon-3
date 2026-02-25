@@ -1,0 +1,21 @@
+Question#5: What is the difference between const and readonly?
+Question: What is the difference between const and readonly?
+In C#, both `const` and `readonly` are used to define fields that cannot be modified after they have been initialized, but they have some key differences:
+1. **Initialization**:
+   - `const`: A `const` field must be initialized at the time of declaration and cannot be changed afterward.
+  It is implicitly static, meaning it belongs to the type rather than an instance of the type.
+   - `readonly`: A `readonly` field can be initialized either at the time of declaration or within a constructor.
+  It can have different values for different instances of the class.
+  2. **Type**:
+   - `const`: The value of a `const` field is determined at compile time and must be a compile-time constant (e.g., primitive types, strings, enums).
+   - `readonly`: The value of a `readonly` field is determined at runtime and can be any type, including reference types.
+   3. **Usage**:
+   - `const`: Since `const` fields are replaced with their values at compile time, they cannot be used in situations
+   where a reference to the field is required (e.g., as a parameter to a method).
+   They are typically used for values that are truly constant and will never change (e.g., mathematical constants)."زي $\pi$ مثلا "
+
+   - `readonly`: `readonly` fields can be used in situations where a reference to the field is required,
+   and they are typically used for values that are intended to be constant but may need to be initialized at runtime.
+
+   In summary, use `const` for values that are truly constant and known at compile time, and use `readonly` for values
+   that are intended to be constant but may need to be initialized at runtime or may differ between instances.
