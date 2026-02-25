@@ -1,0 +1,17 @@
+Scenario: You defined a class Car with a custom constructor: public Car(string model). 
+In the Main method, you try to create an object using Car myCar = new Car(); (with no parameters).
+
+Question: 1. Will this code compile? Why or why not?
+
+1. No, this code will not compile. The reason is that when you define a custom constructor in a class,
+C# does not automatically generate a default constructor (a parameterless constructor) for you. 
+Since the Car class has a custom constructor that requires a string parameter, 
+you must provide that parameter when creating an instance of the Car class.
+
+2. What happened to the "Default Constructor" that C# usually provides?
+
+2. The "Default Constructor" that C# usually provides is only generated if you do not define any constructors in your class.
+Once you define a custom constructor, the default constructor is no longer available unless you explicitly define it yourself.
+In this case, since you defined a constructor that takes a string parameter, 
+the default constructor (which takes no parameters) is not generated,
+and you cannot create an instance of Car without providing the required parameter.
