@@ -1,0 +1,22 @@
+.Question: When you write the statement Student s1 = new Student();, the keyword new is used.
+
+What exactly does new do in the Memory (Heap/Stack)?
+
+The keyword "new" in the statement "Student s1 = new Student();" is used to create a new instance of the Student class.
+When this statement is executed, the following happens in terms of memory and class behavior:
+1. Memory Allocation: The new keyword allocates memory for the new instance of the Student class on the heap.
+The heap is a region of memory used for dynamic memory allocation, which allows for the creation of objects at runtime.
+2. Constructor Invocation: After allocating memory, the new keyword triggers the constructor of the Student class to initialize
+the newly created object. The constructor is a special method that is called when an object is instantiated,
+and it typically sets up initial values for the object's attributes or performs any necessary setup tasks.
+3. Reference Assignment: The new keyword also returns a reference to the newly created object, 
+which is then assigned to the variable s1. This means that s1 now holds a reference to the memory location where the Student object is stored on the heap.
+
+What part of the class does the new keyword trigger or call immediately?
+
+The new keyword immediately triggers the constructor of the class. The constructor is a special method that is called when an object is instantiated,
+and it is responsible for initializing the object's state. When you use the new keyword to create an instance of a class,
+it automatically calls the constructor to set up the initial values for the object's attributes or perform any necessary setup tasks.
+
+In summary, the new keyword is responsible for allocating memory for a new object on the heap, invoking the constructor to initialize the object,
+and returning a reference to that object which can be used to access its properties and methods.
